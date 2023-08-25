@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import {
   Navbar,
   NavbarBrand,
@@ -11,6 +12,7 @@ import {
   NavbarMenuItem,
   Link as NextUILink,
 } from "@nextui-org/react";
+import Logo from "../assets/icons/package_icon.svg";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -24,6 +26,7 @@ const Header: React.FC = () => {
           className="sm:hidden"
         />
         <NavbarBrand>
+          <Image priority src={Logo} alt="Logo" />
           <p className="font-bold text-lg">inventory</p>
         </NavbarBrand>
       </NavbarContent>
