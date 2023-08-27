@@ -19,7 +19,7 @@ const Header: React.FC = () => {
   const menuItems = ["Pricing", "Get Template"];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen}>
+    <Navbar onMenuOpenChange={setIsMenuOpen} shouldHideOnScroll>
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -41,7 +41,7 @@ const Header: React.FC = () => {
             as={NextUILink}
             isExternal
             showAnchorIcon
-            color="default"
+            className="bg-foreground-900 text-foreground-50"
             href="https://google.com"
           >
             Get Template
