@@ -24,7 +24,13 @@ const Main: React.FC = () => {
       <p className="text-lg text-center">
         An easy-to-use powerful dashboard to manage your stock inventory.
       </p>
-      <Button size="lg" className="bg-foreground-900 text-foreground-50">
+      <Button
+        as={Link}
+        href="https://luckly083.gumroad.com/l/inventory"
+        isExternal
+        size="lg"
+        className="bg-foreground-900 text-foreground-50"
+      >
         Get template
       </Button>
       <Image src={MainImage} alt="Main Image" />
@@ -71,6 +77,8 @@ const Main: React.FC = () => {
           <CardFooter>
             <Button
               as={Link}
+              target="_blank"
+              href="https://luckly083.gumroad.com/l/inventory"
               className="mx-auto w-2/3 bg-foreground-900 text-foreground-50"
               endContent={<AiOutlineArrowRight />}
             >

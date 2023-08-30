@@ -42,7 +42,7 @@ const Header: React.FC = () => {
             isExternal
             showAnchorIcon
             className="bg-foreground-900 text-foreground-50"
-            href="https://google.com"
+            href="https://luckly083.gumroad.com/l/inventory"
           >
             Get Template
           </Button>
