@@ -44,7 +44,7 @@ const Main: React.FC = () => {
         <Card className="mx-auto w-72 my-2">
           <CardHeader className="flex-col gap-2">
             <p className="text-lg text-center font-bold">Inventory dashboard</p>
-            <p className="text-5xl font-bold">$10</p>
+            <p className="text-5xl font-bold">$20</p>
           </CardHeader>
           <CardBody>
             <CheckboxGroup
